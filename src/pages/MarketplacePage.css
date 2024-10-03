@@ -1,0 +1,42 @@
+.marketplace {
+  background-color: #fff;
+  padding: 20px;
+  color: #242526;
+}
+
+.marketplace-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 70%;
+}
+
+.new-listing-input {
+  margin-right: 10px;
+}
+
+.create-listing-button {
+  background-color: #2e89ff;
+  color: #fff;
+}
+
+.listing-section {
+  display: flex;
+  gap: 20px;
+}
+
+.listing-box {
+  width: 150px;
+  height: 150px;
+  background-color: #f0f2f5;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #242526;
+  font-size: 1em;
+}
