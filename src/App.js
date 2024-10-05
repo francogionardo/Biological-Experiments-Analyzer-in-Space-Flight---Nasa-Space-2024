@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { FaHome, FaStore, FaUserFriends, FaBell } from 'react-icons/fa';
+import { FaHome, FaStore, FaUserFriends, FaBell, FaComment } from 'react-icons/fa';
 import HomePage from './pages/HomePage';
 import MarketplacePage from './pages/MarketplacePage';
 import FriendsPage from './pages/FriendsPage';
 import NotificationsPage from './pages/NotificationsPage';
+import Chat from './pages/Chat'; // Import Chat page
 import './App.css';
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
           <Link to="/notifications" className="menu-item">
             <FaBell /> Notifications
           </Link>
+          <Link to="/chat" className="menu-item">
+            <FaComment /> Chat
+          </Link>
         </div>
 
         {/* Main content */}
@@ -35,6 +39,7 @@ function App() {
             <Route path="/marketplace" element={<MarketplacePage />} />
             <Route path="/friends" element={<FriendsPage />} />
             <Route path="/notifications" element={<NotificationsPage />} />
+            <Route path="/chat" element={<Chat />} /> {/* Chat page route */}
           </Routes>
         </div>
       </div>
